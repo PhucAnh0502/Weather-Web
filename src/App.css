@@ -1,42 +1,125 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* div {
+  border: 2px solid black;
+} */
+
+body {
+  background-color: #a3cbd5;
+}
+.weather-container {
+  width: 100%;
+  padding: 30px;
+  background-color: white;
   text-align: center;
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.today {
+  background-color: #5596f6;
+  border-radius: 10px;
+}
+.header {
+  grid-row: 1;
+}
+.currentweather {
+  font-size: 30px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.currenttemp {
+  font-size: 50px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.LeftSection,
+.RightSection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.Main {
+  display: grid;
+  min-height: 600px;
+  width: 100%;
+  grid-template-columns: 2fr 3fr;
+  grid-gap: 10px;
+  grid-row: 2;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+canvas {
+  padding: 0;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Chart {
+  gap: 0;
+  height: 60%;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.forcast,
+.HumWind {
+  display: flex;
+  flex: auto;
+  gap: 10px;
 }
 
-.card {
-  padding: 2em;
+.forcast-item,
+.Weather-Img,
+.Temperture,
+.Humidity,
+.WindSpeed {
+  flex: auto;
 }
 
-.read-the-docs {
-  color: #888;
+.Location {
+  height: 10%;
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.Left-Mid {
+  display: flex;
+  gap: 10px;
+  height: 40%;
+}
+
+.Condition {
+  height: 10%;
+}
+
+input {
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.CurrentDTM {
+  color: gray;
+}
+
+.Weather-Img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.Weather-Img img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
 }

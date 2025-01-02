@@ -1,13 +1,9 @@
 import './App.css'
-import './components/ForecastWeather'
+import WeatherContainer from './components/WeatherContainer'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <CurrentWeather />
-    </>
+    <WeatherContainer />
   )
 }
 
