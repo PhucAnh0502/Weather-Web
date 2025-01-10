@@ -1,9 +1,12 @@
-import './App.css'
-import WeatherContainer from './components/WeatherContainer'
+// eslint-disable-next-line no-unused-vars
+import React from 'react'
+import Weather from './components/Weather'
 
-function App() {
+const App = () => {
   return (
-    <WeatherContainer />
+    <div className='app'>
+      <Weather/> 
+    </div>
   )
 }
 
